@@ -18,13 +18,13 @@ public class Car {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="ID")
-	private int id;
+	private Integer id;
 	@Column(name="MAKE")
 	private String make;
 	@Column(name="MODEL")
 	private String model;
 	@Column(name="YEAR")
-	private int year;
+	private Integer year;
 
 	/**
 	 * Default no arg constructor

@@ -14,7 +14,7 @@ import model.Car;
  *
  */
 public class CarHelper {
-	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("Java2Week3");
+	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("CarPersistence");
 	
 	public void insertCar(Car toAdd) {
 		EntityManager em = emfactory.createEntityManager();
