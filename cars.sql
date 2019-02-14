@@ -28,7 +28,7 @@ CREATE TABLE `cars` (
   `MODEL` varchar(35) NOT NULL,
   `YEAR` int(11) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `cars` (
 
 LOCK TABLES `cars` WRITE;
 /*!40000 ALTER TABLE `cars` DISABLE KEYS */;
-INSERT INTO `cars` VALUES (1,'Ford','Taurus',1999);
+INSERT INTO `cars` VALUES (9,'Nissan','Maxima',1993),(10,'Ford','Taurus',2004);
 /*!40000 ALTER TABLE `cars` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-29 21:07:40
+-- Dump completed on 2019-02-14  0:23:22

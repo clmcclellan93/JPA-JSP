@@ -29,10 +29,11 @@ public class viewAllCarsServlet extends HttpServlet {
 
 		CarHelper ch = new CarHelper();
 		
-		request.setAttribute("allCars", ch.showAllCars());
-		
 		if(ch.showAllCars().isEmpty()) {
 			request.setAttribute("allCars", " ");
+		}
+		else {
+			request.setAttribute("allCars", ch.showAllCars());
 		}
 		
 		getServletContext().getRequestDispatcher("/car-list.jsp").forward(request, response);
